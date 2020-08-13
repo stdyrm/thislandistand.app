@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Link from "next/link";
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -15,7 +17,7 @@ export default function Home() {
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
-        </p>
+				</p>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -45,7 +47,12 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+				</div>
+
+				<Link href="/map-info">
+					<a style={{color: "blue", fontSize: "1.5rem", fontWeight: 700}}>Test the Native-Land API</a>
+				</Link>
+
       </main>
 
       <footer>
